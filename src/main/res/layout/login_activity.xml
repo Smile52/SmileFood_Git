@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg3">
+    <RelativeLayout
+        android:layout_marginTop="@dimen/y100"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/user_num_et"
+            android:layout_width="@dimen/x180"
+            android:layout_height="@dimen/y40"
+            android:textSize="@dimen/x15"
+            android:textColor="#000000"
+            android:textColorHint="#40000000"
+            android:hint="@string/user_num"
+            />
+        <EditText
+            android:layout_below="@id/user_num_et"
+            android:textSize="@dimen/x15"
+            android:layout_marginTop="@dimen/y10"
+            android:id="@+id/user_pwd_et"
+            android:layout_width="@dimen/x180"
+            android:layout_height="@dimen/y40"
+            android:textColor="#000000"
+            android:textColorHint="#40000000"
+            android:inputType="textPassword"
+
+            android:hint="@string/user_pwd"/>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y100"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <Button
+        android:id="@+id/login_btn"
+            android:layout_width="@dimen/x180"
+        android:layout_height="@dimen/y40"
+        android:text="@string/login"
+
+        android:background="@drawable/button_bg"
+            android:textSize="@dimen/x15"
+        />
+        <TextView
+            android:id="@+id/rejist_tv"
+            android:layout_marginTop="@dimen/y10"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_rejist"
+            android:textSize="@dimen/x15"/>
+    </LinearLayout>
+</LinearLayout>

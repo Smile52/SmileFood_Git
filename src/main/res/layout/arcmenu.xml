@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.View.ArcMenu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:smile="http://schemas.android.com/apk/res/com.example.smilefood"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    smile:position="right_bottom"
+    smile:radius="200dp" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/compose_chinese"
+        android:tag="camera" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/compose_west"
+        android:tag="place" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/compose_huoguo"
+        android:tag="people" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/compose_dessert"
+        android:tag="music" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/compose_soup"
+        android:tag="sleep" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/compose_drink"
+        android:tag="thought" />
+
+    <!-- 中间菜单按钮 -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/composer_button" />
+
+</com.View.ArcMenu>

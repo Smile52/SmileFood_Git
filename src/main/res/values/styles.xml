@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+
+    </style>
+    <style name="MyTheme" parent="android:Theme">
+        <item name="android:windowTitleSize">@dimen/x30</item>
+        <item name="android:windowTitleBackgroundStyle">@style/WindowsTitleBackground</item>
+    </style>
+    <style name="WindowsTitleBackground">
+        <item name="android:background">@color/Title_bg</item>
+    </style>
+    <style name="Transparent" parent="@android:style/Theme.Dialog">
+
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="@dimen/y50"
+    android:background="#fec24d"
+    >
+    <LinearLayout
+
+        android:id="@+id/id_homepage_tab"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/y45"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y35"
+            android:src="@drawable/ic_index"/>
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/index"
+            android:textSize="@dimen/x10"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/id_recommend_tab"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/y45"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y35"
+            android:src="@drawable/ic_recommend"/>
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recommend"
+            android:textSize="@dimen/x10"
+            />
+    </LinearLayout>
+    <LinearLayout
+
+        android:id="@+id/id_shopping_tab"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/y45"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y35"
+            android:src="@drawable/ic_shopping"/>
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shoppcart"
+            android:textSize="@dimen/x10"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/id_person_tab"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/y45"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y35"
+            android:src="@drawable/ic_person"/>
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/person"
+            android:textSize="@dimen/x10"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/title"></include>
+<com.View.SlideShowView
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y170"></com.View.SlideShowView>
+   <GridView
+       android:id="@+id/id_gridview"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:numColumns="3"
+       android:verticalSpacing="@dimen/y10"
+       ></GridView>
+</LinearLayout>

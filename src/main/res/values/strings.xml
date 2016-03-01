@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">SmileFood</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="user_num">用户账户</string>
+    <string name="user_pwd">密码</string>
+    <string name="login">登录</string>
+    <string name="rejist">注册</string>
+    <string name="hint_rejist">还没有？注册一个</string>
+    <string name="rejist_title">用户注册</string>
+    <string name="new_usernum">新用户账号</string>
+    <string name="new_userpwd">密码</string>
+    <string name="new_username">用户姓名</string>
+    <string name="new_userphone">手机号码</string>
+    <string name="index">首页</string>
+    <string name="recommend">今日推荐</string>
+    <string name="shoppcart">购物车</string>
+    <string name="person">我</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+
+</resources>
