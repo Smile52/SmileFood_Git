@@ -20,7 +20,7 @@ public class PersonFragment extends android.support.v4.app.Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View person_view=inflater.inflate(R.layout.person_fragment,container,false);
         TextView title_text= (TextView) person_view.findViewById(R.id.id_title_text);
-        title_text.setText("我");
+        title_text.setText("小贴心");
 
 
         return  person_view;

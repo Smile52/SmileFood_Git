@@ -23,7 +23,7 @@ public class AboutStoreActivity extends AppCompatActivity {
             );
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
             window.setStatusBarColor(Color.TRANSPARENT);
-            //window.setNavigationBarColor(Color.TRANSPARENT);
+
         }
         setContentView(R.layout.activity_about_store);
         aboutTitle_tv= (TextView) findViewById(R.id.id_title_text);

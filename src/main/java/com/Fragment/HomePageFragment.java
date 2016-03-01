@@ -5,16 +5,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.widget.RecyclerView;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.GridView;
 import android.widget.TextView;
 
@@ -23,7 +18,7 @@ import com.Bean.MyButton;
 import com.example.smilefood.AboutStoreActivity;
 import com.example.smilefood.MainActivity;
 import com.example.smilefood.R;
-import com.example.smilefood.SendActivity;
+import com.example.smilefood.SendAdviceActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -85,7 +80,7 @@ public class HomePageFragment extends android.support.v4.app.Fragment {
                         MainActivity.mViewPager.setCurrentItem(1);//跳转到今日推荐Fragment
                         break;
                     case 1:
-                        Intent intent=new Intent(getContext(),SendActivity.class);
+                        Intent intent=new Intent(getContext(),SendAdviceActivity.class);
                         startActivity(intent);
                         break;
                     case 2:

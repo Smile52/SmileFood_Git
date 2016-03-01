@@ -1,5 +1,7 @@
 package com.Smile.Intent;
 
+import android.util.Log;
+
 import com.Config.Config;
 
 import java.io.BufferedReader;
@@ -102,30 +104,58 @@ public class webService {
     }
 
     public static String rejistUser(String userInfo){
+        InputStream is=null;
+        HttpURLConnection conn=null;
         String  path="http://"+ Config.IP + "/SmileFoodServer/servlet/RejistUserServlet";
         try {
             URL url = new URL(path);
-            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+             conn= (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("POST");
             conn.setReadTimeout(5000);
             OutputStream outputStream =conn.getOutputStream();
             outputStream.write(userInfo.getBytes());
-            //处理服务器返回的信息
+         /*   //处理服务器返回的信息
             BufferedReader reader=new BufferedReader(new InputStreamReader(conn.getInputStream()));
             StringBuffer sb=new StringBuffer();
             String str;
+
+            Log.i("dandy", "返回代码"+conn.getResponseCode());
             while ((str=reader.readLine())!=null){
                 sb.append(str);
+
+            }*/
+            if(conn.getResponseCode()==200){
+                is=conn.getInputStream();
+                System.out.println("返回数据");
+                return parseInfo(is);
+
             }
-        }catch (MalformedURLException e) {
-                e.printStackTrace();
-            }
-         catch (IOException e) {
+
+        } catch (Exception e) {
             e.printStackTrace();
+        }finally {
+            // 意外退出时进行连接关闭保护
+            if(conn!=null){
+                conn.disconnect();
+            }
+            if(is!=null){
+                try {
+                    is.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
         }
         return null;
     }
 
+    /**
+     * 下单请求服务端
+     * @param foodJsons
+     */
+    public static void orderFood(String foodJsons){
+
+    }
 
 
 

@@ -18,5 +18,8 @@
     <string name="shoppcart">购物车</string>
     <string name="person">我</string>
     <string name="title_activity_scrolling">ScrollingActivity</string>
-
+    <string name="about">       Smile厨房纯正湘菜为经营主体，追求原生态的同时，不排斥时尚。菜品古朴、家常
+        、根系纯正。经民厨烹饪，无愧适口民肴。餐厅环境优雅时尚，民族风十足、高尚典雅、动幽相宜，
+        完全的诠释“食”与“境”的美好境界。古老的味道，时尚的美境，提醒着我们一群群都市人寻找美味。原来最美、
+        最纯正的美味是儿时的记忆在妈妈的厨房里</string>
 </resources>

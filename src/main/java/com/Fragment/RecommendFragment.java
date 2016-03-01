@@ -1,13 +1,16 @@
 package com.Fragment;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.Nullable;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -46,6 +49,7 @@ public class RecommendFragment extends android.support.v4.app.Fragment {
     private List<Food> listfrom;
 
     private static final String url="http://"+ webService.IP1 + "/SmileFoodServer/servlet/FoodQueryServlet";
+    private   RecyclerViewAdapter adapter;
     private Handler mHandler=new Handler(){
         @Override
         public void handleMessage(Message msg) {
@@ -68,8 +72,6 @@ public class RecommendFragment extends android.support.v4.app.Fragment {
 
                         addDatatoview(mfoodList);
                         //清空数据库
-
-
                     }
             }
             //savaData(mfoodList);
@@ -80,39 +82,50 @@ public class RecommendFragment extends android.support.v4.app.Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View recommend=inflater.inflate(R.layout.recommend_fragment,container,false);
-        title_text= (TextView) recommend.findViewById(R.id.id_title_text);
-        title_text.setText("今日推荐");
-
-        GetJson.getJsonArray
-                ("http://" + Config.IP + "/SmileFoodServer/servlet/FoodQueryServlet", mHandler,getContext());
+        initViews(recommend);
         return recommend;
     }
+
+    /**
+     * 初始化控件
+     * @param recommend
+     */
+    private void initViews(View recommend) {
+        title_text= (TextView) recommend.findViewById(R.id.id_title_text);
+        recyclerView= (RecyclerView) recommend.findViewById(R.id.id_recyclerview);
+        title_text.setText("今日推荐");
+        GetJson.getJsonArray
+                ("http://" + Config.IP + "/SmileFoodServer/servlet/FoodQueryServlet", mHandler, getContext());
+    }
+
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
+        final LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
         int spacingInPixels = getResources().getDimensionPixelSize(R.dimen.y3);
 
-        recyclerView= (RecyclerView) view.findViewById(R.id.id_recyclerview);
         recyclerView.addItemDecoration(new SpaceItemDecoration(spacingInPixels));
         recyclerView.setLayoutManager(layoutManager);
+
+
+
         mRequestQueue= Volley.newRequestQueue(MyApplication.getContextObject());
         //System.out.println("www"+mfoodList.size());
-        mArcMenu= (ArcMenu) view.findViewById(R.id.arcmenu);
+        //mArcMenu= (ArcMenu) view.findViewById(R.id.arcmenu);
         //卫星菜单点击事件
-        mArcMenu.setOnMenuItemClickListener(new ArcMenu.OnMenuItemClickListener() {
+        /*mArcMenu.setOnMenuItemClickListener(new ArcMenu.OnMenuItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
                 //从上往下算的
-                switch (position){
+                switch (position) {
                     case 0:
 
                     case 1:
-                        Log.i("dandy","点击了");
+                        Log.i("dandy", "点击了");
                 }
 
             }
-        });
+        });*/
 
     }
 

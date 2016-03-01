@@ -7,4 +7,5 @@
     <color name="color_item_press">#fadcac</color>
     <color name="color_item_normal">#ffffff</color>
     <color name="accent_material_light">#f85a0b</color>
+    <color name="black">#464646</color>
 </resources>

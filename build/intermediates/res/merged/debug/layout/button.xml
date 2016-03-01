@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y50"
+    android:background="#fec24d"
+    android:orientation="horizontal">
+
+    <!--<LinearLayout-->
+
+    <!--android:id="@+id/id_homepage_tab"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="@dimen/y45"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="@dimen/y35"-->
+    <!--android:src="@drawable/ic_home_normal" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:text="@string/index"-->
+    <!--android:textSize="@dimen/x10"-->
+
+    <!--/>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/id_recommend_tab"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="@dimen/y45"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="@dimen/y35"-->
+    <!--android:src="@drawable/ic_tuijian_no" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:text="@string/recommend"-->
+    <!--android:textSize="@dimen/x10" />-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+
+    <!--android:id="@+id/id_shopping_tab"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="@dimen/y45"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="@dimen/y35"-->
+    <!--android:src="@drawable/ic_shopping_no" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:text="@string/shoppcart"-->
+    <!--android:textSize="@dimen/x10" />-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/id_person_tab"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="@dimen/y45"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="@dimen/y35"-->
+    <!--android:src="@drawable/ic_person" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:text="@string/person"-->
+    <!--android:textSize="@dimen/x10" />-->
+    <!--</LinearLayout>-->
+    <RadioGroup
+        android:id="@+id/rg_Group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#fec24d">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/bottom_button_style"
+            android:drawableTop="@drawable/bottom_home_selector"
+            android:text="首页"/>
+
+        <RadioButton
+            android:id="@+id/rb_tuijian"
+            style="@style/bottom_button_style"
+            android:drawableTop="@drawable/bottom_tuijian_selector"
+            android:text="推荐"/>
+
+        <RadioButton
+            android:id="@+id/rb_shopping"
+            style="@style/bottom_button_style"
+            android:drawableTop="@drawable/bottom_shopping_selector"
+            android:text="购物车"/>
+        <RadioButton
+            android:id="@+id/rb_my"
+            style="@style/bottom_button_style"
+            android:drawableTop="@drawable/bottom_my_selector"
+            android:text="我"/>
+    </RadioGroup>
+
+
+</LinearLayout><!-- From: file:/G:/AndroidStuidoDemo/MyApplication/smilefood/src/main/res/layout/button.xml -->

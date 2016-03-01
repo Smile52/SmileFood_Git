@@ -1,0 +1,9 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+    <gradient
+        android:startColor="#f8ff45"
+        android:centerColor="#fcc940"
+        android:endColor="#fba620"
+        android:type="linear"
+        android:angle="135"/>
+</shape><!-- From: file:/G:/AndroidStuidoDemo/MyApplication/smilefood/src/main/res/drawable/side_nav_bar.xml -->

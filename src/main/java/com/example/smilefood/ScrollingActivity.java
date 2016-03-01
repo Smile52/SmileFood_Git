@@ -38,6 +38,9 @@ import com.umeng.socialize.weixin.controller.UMWXHandler;
 import com.umeng.socialize.weixin.media.CircleShareContent;
 import com.umeng.socialize.weixin.media.WeiXinShareContent;
 
+/**
+ * 单个菜的详情activity
+ */
 public class ScrollingActivity extends AppCompatActivity {
     private Food food;
     private ImageView food_img;
@@ -80,11 +83,6 @@ public class ScrollingActivity extends AppCompatActivity {
             }
         });
     }
-
-    private void initShare() {
-
-    }
-
     private void initDatas() {
         Intent intent=getIntent();
         food= (Food) intent.getSerializableExtra("food");
@@ -116,9 +114,7 @@ public class ScrollingActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
+
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
@@ -128,7 +124,7 @@ public class ScrollingActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private void init() {
+    public void init() {
 
         // 设置分享内容
         mController

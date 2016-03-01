@@ -320,7 +320,7 @@ public class SlideShowView extends FrameLayout {
 
         @Override
         protected Boolean doInBackground(String... params) {
-            String  path="http://"+ webService.IP + "/SmileFoodServer/AdImgs/ad1.jpg";
+            String  path="http://"+ webService.IP1 + "/SmileFoodServer/AdImgs/ad1.jpg";
             try {
 
 

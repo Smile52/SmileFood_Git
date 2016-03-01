@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <scale
+        android:duration="800"
+        android:fromXScale="@dimen/x240"
+        android:toXScale="0"
+        android:fromYScale="@dimen/y160"
+        android:toYScale="0">
+
+    </scale>
+</set><!-- From: file:/G:/AndroidStuidoDemo/MyApplication/smilefood/src/main/res/anim/into.xml -->

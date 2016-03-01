@@ -6,8 +6,8 @@
             android:title="注册新用户" />
         <item android:id="@+id/camera_menu" android:icon="@android:drawable/ic_menu_camera"
             android:title="相机" />
-        <item android:id="@+id/nav_slideshow" android:icon="@android:drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+        <item android:id="@+id/changeuser" android:icon="@android:drawable/ic_menu_slideshow"
+            android:title="切换用户" />
         <item android:id="@+id/nav_manage" android:icon="@android:drawable/ic_menu_manage"
             android:title="Tools" />
     </group>

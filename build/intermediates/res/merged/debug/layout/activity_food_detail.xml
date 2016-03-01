@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.smilefood.FoodDetailActivity">
+<include layout="@layout/title"></include>
+<ImageView
+    android:layout_width="@dimen/x240"
+    android:layout_height="@dimen/y140"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/y20"/>
+</LinearLayout>
+<!-- From: file:/G:/AndroidStuidoDemo/MyApplication/smilefood/src/main/res/layout/activity_food_detail.xml -->
