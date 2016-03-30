@@ -143,7 +143,6 @@ public class RecommendFragment extends android.support.v4.app.Fragment {
     }
     public void addDatatoview(final List<Food> list){
         //deleteData();
-
         //queryData();
         RecyclerViewAdapter viewAdapter=new RecyclerViewAdapter(list);
         recyclerView.setAdapter(viewAdapter);

@@ -5,7 +5,7 @@
     android:background="#fec24d"
     >
     <TextView
-        android:layout_marginTop="@dimen/y10"
+        android:layout_marginTop="@dimen/y12"
         android:layout_gravity="center_horizontal"
         android:id="@+id/id_title_text"
         android:layout_width="wrap_content"
